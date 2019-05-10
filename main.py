@@ -1,12 +1,10 @@
 import telebot
 import meduza
-import constant
+import constants
 import time
 
 
-bot = telebot.TeleBot(constant.token)
-
-subscribers = []
+bot = telebot.TeleBot(constants.token)
 
 
 @bot.message_handler(commands=['start', 'help'])
